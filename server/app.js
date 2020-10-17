@@ -1,7 +1,12 @@
+/**
+ * Entry point of this Express Application
+ * @type {Express}
+ */
+
 const app = require("./configs/express").app;
 const bodyParser = require("body-parser");
 const path = require("path");
-const util = require("./helpers/util");
+const util = require("./shared/helpers/util");
 
 const cors = require("cors");
 
