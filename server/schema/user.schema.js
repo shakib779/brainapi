@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const enums = require('./../statics/enums');
+const enums = require('../shared/statics/enums');
 module.exports = {
   status: {
     type: String,
     required: true,
-    default: enums.userStatus.active
+    default: enums.modelStatus.active
   },
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
